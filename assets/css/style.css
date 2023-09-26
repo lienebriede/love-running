@@ -26,6 +26,10 @@ header {
     z-index: 99;
     width: 100%;
     box-shadow: 0 2px 2px #3a3a3a;
+    /* These are for the nav toggle */
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
 }
 
 header a {
@@ -67,8 +71,22 @@ nav {
     box-shadow: 0 2px 2px #3a3a3a;
     /* nav bar is closed until the user clicks to open it */
     display: none;
+    /* tells the nav element that the top of the element should start at the bottom of its parent, 0% would be the start of the parent */
+    top: 100%;
+}
 
-    
+/* Nav toggle */
+#nav-toggle:checked~nav{
+    display: block;
+}
+
+#nav-toggle {
+    /* hide the checkbox */
+    display: none;
+}
+
+.nav-toggle-label {
+    font-size: 2rem;
 }
 
 /* Main Content */
