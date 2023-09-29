@@ -146,6 +146,25 @@ hr {
     align-items: center;
     justify-content: center;
 }
+/* Meetups section */
+#times {
+    background: url("../images/Dublin\ city\ image.webloc") no-repeat center/cover;
+/* Handles responsivity without the need for a media Query */
+    display: flex;
+    flex-wrap: wrap;
+}
+#times > div {
+    color: #fafafa;
+    background-color: rgba(0, 0, 0, .6);
+    padding: 15px;
+    text-align: center;
+    /* it will work well on all screens */
+    flex-basis: 200px;
+    flex-grow: 1;
+}
+#times h3 {
+    color:#fafafa;
+}
 
 #cover-text {
     /* rgba color that sets the opacity to semi-transparent */
